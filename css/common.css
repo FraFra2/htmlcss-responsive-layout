@@ -1,0 +1,171 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+:root{
+    --main-blue: #0084fd;
+    --main-lightblue: #b5ddff;
+
+    --secondary-color: #9593e6
+
+}
+
+
+.container{
+    padding: 20px;
+    width: 100%;
+
+}
+
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.spacebetween{
+    justify-content: space-between;
+}
+
+
+/* HEADER */
+
+header{
+    background-color: var(--main-blue);
+
+}
+
+.burger{
+    font-size: 2em;
+
+}
+
+/* Main */
+
+/* Card */
+.card{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--main-lightblue);
+    border-radius: 25px;
+    padding: 2.5rem 2.5rem 2.5rem 2.5rem;
+    width: 100%;
+    margin-bottom: 2.5rem;
+}
+
+.card h2{
+    color: var(--main-blue);
+    margin-bottom: 1rem;
+}
+
+.card p{
+    line-height: 2rem;
+    opacity: 0.8;
+}
+/* First Card */
+.first-card p{
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+.app-store{
+    padding: 10px 20px;
+    color: white;
+    background-color: var(--main-blue);
+    border-radius: 50px;
+}
+.navbar{
+    display: none;
+}
+
+#phone-img{
+    width: 70%;
+    margin-top: 2rem;
+    margin-bottom: -3rem;
+}
+
+.card div i{
+    color: var(--main-blue);
+    font-size: 5.5rem;
+    margin-bottom: 2rem;
+}
+
+/* Strategic planning */
+
+.secondary-bg{
+    background-color: #9792e4;
+    color:white;
+}
+
+.planning-img{
+    margin-top: 2rem;
+    width: 100%;
+    margin-bottom: 5rem;
+}
+
+.planning p{
+    line-height: 2rem;
+
+}
+
+.planning h2{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.white-bg{
+    background-color: white;
+}
+
+.white-div{
+    padding: 2rem;
+    margin-top: 3rem;
+    border-radius: 50px;
+    color: black;
+    text-align: center;
+
+}
+
+.white-div h2{
+    
+    font-size: 2rem;
+}
+
+.white-div p{
+    font-style: italic;
+}
+/* Query */
+
+
+@media screen and (min-width: 768px) {
+    
+
+}
+
+@media screen and (min-width: 992px){
+    .navbar{
+        display: block;
+    }
+    .navbar ul{
+        display: flex;
+        list-style: none;
+    }
+
+    .navbar li{
+        color: white;
+        text-decoration: none;
+        padding: .625rem;
+    }
+    
+    .burger{
+        display: none;
+    }
+}
